@@ -9,18 +9,17 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="container">
-      <div id="clock"></div>
+    <section class="contaner">
+      <div class="clock"></div>
       <input
-        onchange="setAlarmTime(this.value)"
         class="input"
+        onchange="setAl(this.value)"
         type="datetime-local"
-        name="alarmTime"
-        id=""
+        name="alerm"
       />
-      <div class="controls">
-        <button onclick="setAlarm()" class="btn set-alarm">set alarm</button>
-        <button onclick="clearAlerm()" class="btn clear-alarm">
+      <div class="control">
+        <button onclick="setAlarm()" class="btn setAlarm">set alarm</button>
+        <button onclick="clearAlarm()" class="btn clearAlarm">
           clear alarm
         </button>
       </div>
