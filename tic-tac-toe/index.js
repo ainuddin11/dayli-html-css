@@ -225,7 +225,10 @@ function chekWinner() {
 
   //check board is full or not
 
-  // chekAllBoard();
+  chekAllBoard();
+}
+
+function chekAllBoard() {
   if (
     board[0][0] != "" &&
     board[0][1] != "" &&
@@ -237,19 +240,23 @@ function chekWinner() {
     board[2][1] != "" &&
     board[2][2] != ""
   ) {
-    setTimeout(() => {
-      for (let c = 0; c < 3; c++) {
-        for (let i = 0; i < 3; i++) {
-          let tile = document.getElementById(i.toString() + "-" + c.toString());
-          tile.innerText = " ";
-          tile.classList.remove("winner");
-
-          document.getElementById("heding").innerText = `Let's try again`;
-        }
-      }
-      gameOver = false;
-    }, 3000);
+    timeout();
   }
 }
 
-function chekAllBoard() {}
+function timeout() {
+  setTimeout(() => {
+    for (let c = 0; c < 3; c++) {
+      for (let i = 0; i < 3; i++) {
+        let tile = document.getElementById(i.toString() + "-" + c.toString());
+        board[c][i] = "";
+        tile.innerText = "";
+        tile.classList.remove("winner");
+
+        document.getElementById("heding").innerText = `Let's try again`;
+      }
+    }
+    setTile();
+    gameOver = false;
+  }, 3000);
+}
