@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,300;0,400;0,600;1,100&display=swap");
+
+body {
+  font-family: "Urbanist", sans-serif;
+  height: 100vh;
+  background: #333
+    url("https://dl.airtable.com/.attachments/97a67b32630a587e482863a61861607b/547d4b22/product-6.jpg")
+    no-repeat center center / cover;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  margin: 0.4rem;
+}
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(116, 27, 12);
+}
+
+.txt-type > .txt {
+  border-right: 2px solid #fff;
+}
