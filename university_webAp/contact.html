@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200;1,300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&family=Urbanist:ital,wght@0,300;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1c07680320.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- -------header section------ -->
+    <section class="sub-header">
+      <nav>
+        <h2>
+          <a href="index.html">University</a>
+        </h2>
+        <div class="nav-links">
+          <p class="cros-btn" onclick="hideMenu()">X</p>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="bar-btn" onclick="showMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+      <h1>Contact with us</h1>
+    </section>
+
+    <!-- ---------contact us---------- -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4337.786515371351!2d89.12390496307357!3d23.90276634973926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe965a0288aa7f%3A0x30d1d4c04ffe5db8!2sRabindra%20Maitree%20University!5e0!3m2!1sen!2sbd!4v1659282518492!5m2!1sen!2sbd"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <span>
+              <h5>Ram Chandra Ray Chowdhury Road</h5>
+              <p>Kushtia , Khulna, BD</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <h5>info@edu.rmu.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form>
+            <input type="text" placeholder="Enter your name" />
+            <input type="email" placeholder="Enter your Email" />
+            <input type="text" placeholder="Enter your subject" />
+            <textarea rows="8" placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------fotter------- -->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore,
+        distinctio assumenda labore tempora fuga modi quaerat. Consequuntur quis
+        iure adipisci placeat asperiores, ducimus nemo quas aut doloremque omnis
+        nesciunt veritatis.
+      </p>
+      <h3>
+        Azad
+        <span>AzadDev Corporation © 2022</span>
+      </h3>
+    </section>
+
+    <!-- -----javasript------- -->
+    <script>
+      var cros_btn = document.querySelector(".cros-btn");
+      var bar_btn = document.querySelector(".bar-btn");
+      var nav_links = document.querySelector(".nav-links");
+
+      function showMenu() {
+        nav_links.style.right = "0";
+      }
+      function hideMenu() {
+        nav_links.style.right = "-250px";
+      }
+    </script>
+  </body>
+</html>
